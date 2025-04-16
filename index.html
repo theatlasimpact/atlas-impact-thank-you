@@ -4,67 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You | Atlas Impact</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://theatlasimpact.com/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://theatlasimpact.com/favicon.ico" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
+      padding: 3rem 1rem;
       font-family: 'Inter', system-ui, sans-serif;
       background-color: #0b0b0b;
       color: #ffffff;
-      min-height: 100dvh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
-      padding: 2rem 1rem;
-      box-sizing: border-box;
     }
-
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
     h1 {
-      color: #00ffe1;
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      color: #00ffe1;
+      margin-bottom: 1.2rem;
     }
-
     p {
       font-size: 1.2rem;
-      max-width: 600px;
       line-height: 1.6;
     }
-
-    a.button {
-      margin-top: 2rem;
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      border: 2px solid #00ffe1;
-      border-radius: 8px;
-      color: #00ffe1;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    a.button:hover {
-      background: #00ffe1;
-      color: #0b0b0b;
-    }
   </style>
+  <script>
+    // Force break out of iframe, even if embedded
+    if (window.top !== window.self) {
+      window.top.location.href = window.location.href;
+    }
+  </script>
 </head>
 <body>
-
-  <h1>Thanks for Reaching Out</h1>
-  <p>
-    We’ve received your info — and we’re already thinking about how to make an impact.
-    One of our strategists will be in touch soon to explore how Atlas can help you move faster, smarter, or both.
-  </p>
-
-  <a class="button" href="https://theatlasimpact.com">← Return to Atlas Impact</a>
-
+  <div class="container">
+    <h1>Thanks for Reaching Out</h1>
+    <p>We’ve received your info — and we’re already thinking about how to make an impact.</p>
+    <p>One of our strategists will be in touch soon to explore how Atlas can help you move faster, smarter, or both.</p>
+  </div>
 </body>
 </html>
